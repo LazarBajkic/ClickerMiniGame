@@ -1,6 +1,7 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -12,7 +13,7 @@ public class GameCode extends JFrame implements ActionListener{
     JLabel instructions=new JLabel();
     JLabel counterLbl=new JLabel();
     JButton click=new JButton();
-    ImageIcon btnIcon=new ImageIcon();
+    Icon btnIcon=new ImageIcon("Gent.jpg");
 
     GameCode(){
         this.setSize(400,600);
@@ -21,18 +22,18 @@ public class GameCode extends JFrame implements ActionListener{
         this.setResizable(false);
         this.setVisible(true);
 
-        instructions.setText("To increase your score simply click on the cookie!");
-        instructions.setSize(250,30);
+        instructions.setText("To increase your score simply click on the gentleman!");
+        instructions.setSize(350,30);
         instructions.setVisible(true);
         instructions.setLocation(10, 30);
 
         click.setIcon(btnIcon);
         click.setSize(250,250);
-        click.setLocation(100,300);
+        click.setLocation(65,200);
         click.addActionListener(this);
 
         counterLbl.setText("Your score: ");
-        counterLbl.setLocation(10,40);
+        counterLbl.setLocation(10,70);
         counterLbl.setSize(150, 30);
         counterLbl.setVisible(true);
 
